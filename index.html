@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Banglar Bonik - হোম</title>
+  <meta name="description" content="Banglar Bonik - ঘরে বসেই বাংলার পণ্য কিনুন">
+  <meta name="author" content="Md Sohag">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      border-bottom: 2px solid #d10000;
+    }
+
+    .logo-area {
+      flex: 1;
+    }
+
+    .logo-area img {
+      height: 60px;
+      width: auto;
+    }
+
+    .nav-links {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 25px;
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #d10000;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 30px;
+    }
+
+    .product-section {
+      width: 300px;
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .product-section img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .product-section .description {
+      font-size: 15px;
+      line-height: 1.6;
+      white-space: pre-line;
+      margin-bottom: 10px;
+    }
+
+    .product-section .price {
+      color: red;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-section button {
+      background-color: #d10000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product-section button:hover {
+      background-color: #a80000;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="image/banglarbonik.png" alt="Banglar Bonik Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">যোগাযোগ</a>
+      <a href="#">About</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="product-section">
+      <img src="image/p1.jpg" alt="চায়না রিং জাল">
+      <div class="description">
+অরিজিনাল চায়না রিং জাল আর্ডার করুন।
+আমরা অরিজিনাল জাল দিচ্ছি অরিজিনাল দাম নিচ্ছি।
+✅এই জাল দৈর্ঘ্য ৬০ ফিট ।
+✅প্রস্থ ৪০ সেমি বা ১৭ ইঞ্চি 
+✅উচচতা ৩০ সেমি বা ১৩ ইঞ্চি
+      </div>
+      <div class="price">দাম: ৪৩৫০ টাকা</div>
+      <button>অর্ডার করুন</button>
+    </div>
+  </main>
+
+  <footer>
+    Banglar Bonik &copy; ২০২৫ | ডিজাইন করেছেন All bayjid bishwash
+  </footer>
+
+</body>
+</html>
