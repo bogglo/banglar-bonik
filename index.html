@@ -2,82 +2,50 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>Banglar Bonik - হোম</title>
+  <title>Banglar Bonik</title>
   <meta name="description" content="Banglar Bonik - ঘরে বসেই বাংলার পণ্য কিনুন">
   <meta name="author" content="All Bayjid Bishwash">
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #fdfdfd;
       color: #333;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     header {
       background-color: #fff;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 15px 30px;
       border-bottom: 2px solid #d10000;
     }
 
-    .logo-area {
-      flex: 1;
-    }
-
     .logo-area img {
       height: 60px;
-      width: auto;
       cursor: pointer;
-    }
-
-    .nav-links {
-      flex: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .nav-links a {
       color: #000;
       text-decoration: none;
-      margin: 0 25px;
+      margin: 0 20px;
       font-size: 20px;
       font-weight: bold;
-      position: relative;
-      cursor: pointer;
     }
 
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -6px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #d10000;
-      transition: width 0.3s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
+    .nav-links a:hover {
+      color: #d10000;
     }
 
     main {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
       padding: 30px;
     }
 
     .product-section {
       width: 300px;
-      background-color: #fff;
+      background: #fff;
       padding: 15px;
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -87,45 +55,40 @@
     .product-section img {
       width: 100%;
       border-radius: 6px;
-      margin-bottom: 10px;
     }
 
     .description {
       font-size: 15px;
       line-height: 1.6;
-      white-space: pre-line;
-      margin-bottom: 10px;
+      margin: 15px 0;
     }
 
     .price {
       color: red;
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 10px;
     }
 
-    .product-section button {
+    .product-section a.button {
+      display: inline-block;
+      margin-top: 10px;
       background-color: #d10000;
-      color: #fff;
-      border: none;
+      color: white;
       padding: 10px 20px;
-      font-size: 15px;
       border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      text-decoration: none;
+      font-size: 15px;
     }
 
-    .product-section button:hover {
+    .product-section a.button:hover {
       background-color: #a80000;
     }
 
     footer {
       background-color: #eee;
       padding: 20px;
+      text-align: right;
       font-size: 16px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
     }
   </style>
 </head>
@@ -133,12 +96,14 @@
 
   <header>
     <div class="logo-area">
-      <img src="image/banglarbonik.png" alt="Banglar Bonik Logo" id="logoClick">
+      <a href="index.html">
+        <img src="image/banglarbonik.png" alt="Banglar Bonik Logo">
+      </a>
     </div>
     <div class="nav-links">
-      <a href="#" id="homeClick">Home</a>
-      <a href="#">যোগাযোগ</a>
-      <a href="#">About</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">যোগাযোগ</a>
+      <a href="about.html">About</a>
     </div>
   </header>
 
@@ -153,30 +118,13 @@
 ✅উচচতা ৩০ সেমি বা ১৩ ইঞ্চি
       </div>
       <div class="price">দাম: ৪৩৫০ টাকা</div>
-      <button id="orderNow">অর্ডার করুন</button>
+      <a class="button" href="p1oder.html">অর্ডার করুন</a>
     </div>
   </main>
 
   <footer>
     Banglar Bonik &copy; ২০২৫ | ডিজাইন করেছেন All Bayjid Bishwash
   </footer>
-
-  <script>
-    document.getElementById("logoClick").addEventListener("click", function(e) {
-      e.preventDefault();
-      window.history.pushState({}, "", "index.html");
-    });
-
-    document.getElementById("homeClick").addEventListener("click", function(e) {
-      e.preventDefault();
-      window.history.pushState({}, "", "index.html");
-    });
-
-    document.getElementById("orderNow").addEventListener("click", function(e) {
-      e.preventDefault();
-      window.history.pushState({}, "", "p1oder.html");
-    });
-  </script>
 
 </body>
 </html>

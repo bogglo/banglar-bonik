@@ -94,38 +94,29 @@
 
   <header>
     <div class="logo-area">
-      <img src="image/banglarbonik.png" alt="Banglar Bonik Logo" id="logoClick">
+      <a href="index.html">
+        <img src="image/banglarbonik.png" alt="Banglar Bonik Logo">
+      </a>
     </div>
     <div class="nav-links">
-      <a href="#" id="homeClick">Home</a>
-      <a href="#">যোগাযোগ</a>
-      <a href="#">About</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">যোগাযোগ</a>
+      <a href="about.html">About</a>
     </div>
   </header>
 
   <main>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1Kr5OXN-SPtc4X-Pk9m9Y84yBqKd7UK4DLSUohSODBphWrA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1Kr5OXN-SPtc4X-Pk9m9Y84yBqKd7UK4DLSUohSODBphWrA/viewform?embedded=true"
+      width="700"
+      height="520"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">Loading…</iframe>
   </main>
 
   <footer>
     Banglar Bonik &copy; ২০২৫ | ডিজাইন করেছেন All Bayjid Bishwash
   </footer>
-
-  <script>
-    document.getElementById("logoClick").addEventListener("click", function(e) {
-      e.preventDefault();
-      if (window.location.pathname !== "/index.html") {
-        history.pushState(null, '', 'index.html');
-      }
-    });
-
-    document.getElementById("homeClick").addEventListener("click", function(e) {
-      e.preventDefault();
-      if (window.location.pathname !== "/index.html") {
-        history.pushState(null, '', 'index.html');
-      }
-    });
-  </script>
 
 </body>
 </html>
