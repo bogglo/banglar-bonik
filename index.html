@@ -30,7 +30,7 @@
     .nav-links a {
       color: #000;
       text-decoration: none;
-      margin: 0 20px;
+      margin: 0 50px; /* Updated spacing between buttons */
       font-size: 20px;
       font-weight: bold;
     }
@@ -50,6 +50,7 @@
       border: 1px solid #ccc;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      cursor: pointer;
     }
 
     .product-section img {
@@ -108,7 +109,7 @@
   </header>
 
   <main>
-    <div class="product-section">
+    <div class="product-section" onclick="window.location.href='p1dt.html'">
       <img src="image/p1.jpg" alt="চায়না রিং জাল">
       <div class="description">
 অরিজিনাল চায়না রিং জাল আর্ডার করুন।
@@ -118,7 +119,7 @@
 ✅উচচতা ৩০ সেমি বা ১৩ ইঞ্চি
       </div>
       <div class="price">দাম: ৪৩৫০ টাকা</div>
-      <a class="button" href="p1oder.html">অর্ডার করুন</a>
+      <a class="button" href="p1oder.html" onclick="event.stopPropagation()">অর্ডার করুন</a>
     </div>
   </main>
 

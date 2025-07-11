@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Banglar Bonik - পণ্যের বিস্তারিত</title>
+  <meta name="description" content="অরিজিনাল চায়না রিং জাল | CHINA FISHING TRAP বিস্তারিত">
+  <meta name="author" content="All Bayjid Bishwash">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #d10000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-area img {
+      height: 60px;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px; /* এই লাইন নিশ্চিত করে যে তিনটি লিংকের মধ্যে ৫০px ফাঁক থাকবে */
+    }
+
+    .nav-links a {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #d10000;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      padding: 30px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .thumbnails {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .thumbnails img {
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnails img:hover {
+      transform: scale(1.05);
+    }
+
+    .preview {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+
+    .preview img {
+      max-width: 100%;
+      width: 500px;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #d10000;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-size: 28px;
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .order-button {
+      background-color: #d10000;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      margin: 0 auto 30px auto;
+    }
+
+    .description {
+      white-space: pre-line;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      text-align: right;
+      font-size: 16px;
+      margin-top: auto;
+    }
+  </style>
+  <script>
+    function zoomImage(src) {
+      document.getElementById('mainPreview').src = src;
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <a href="index.html">
+        <img src="image/banglarbonik.png" alt="Banglar Bonik Logo">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">যোগাযোগ</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="thumbnails">
+      <img src="image/p1.jpg" onclick="zoomImage('image/p1.jpg')">
+      <img src="image/p1-2.jpg" onclick="zoomImage('image/p1-2.jpg')">
+      <img src="image/p1-3.jpg" onclick="zoomImage('image/p1-3.jpg')">
+    </div>
+
+    <div class="preview">
+      <img id="mainPreview" src="image/p1.jpg" alt="Zoomed Image">
+
+      <div class="title">
+অরিজিনাল চায়না রিং জাল আর্ডার করুন। <br>
+✅এই জাল দৈর্ঘ্য ৬০ ফিট <br>
+✅প্রস্থ ৪০ সেমি বা ১৭ ইঞ্চি <br>
+✅উচচতা ৩০ সেমি বা ১৩ ইঞ্চি
+      </div>
+
+      <div class="price">দাম: ৪৩৫০ টাকা</div>
+      <a class="order-button" href="p1oder.html">অর্ডার করুন</a>
+
+      <div class="description">
+CHINA FISHING TRAP -10/10 mm.
+চায়না দূয়ারী জাল -১০/১০ মিঃমিঃ।
+মাছ ধরার নাইলন জাল/ফাঁদ/চাই,
+দৈর্ঘ্য- ১১ মিটার,
+প্রস্থ-৪০ সেমি,
+উচ্চতা -৩০সেমি,
+দুই পাশে গোল চাকতি 3 টি করে, গোল চাকতি -৩২ সেমি,
+দুই পাশে ১ মিটার করে অতিরিক্ত জাল আছে মুখ বন্দনি সহ।
+মাঝের 21 টি আয়তাকার দুই ফ্রেমের মাঝে মাছের ফাঁদ আছে -22 টি।
+পুকুর, নদী, খাল, বিল, যেকোনো জলাশয়ে মাছ ধরার উপযোগী,
+রুই, কাতল, পুটি, চিংড়ি, কাঁকড়া সব রকমের মাছের জন্য উপযোগী।
+নেটের মাপ- ১০/১০ মি:মি:
+Total length -11 m,
+Total ring -1 m extra net + 3 round + 22 rectangular + 3 round + 1 m extra net.
+round ring -330mm,
+rectangular size - 400mm X 300mm,
+rectangular ring spacing -350 mm,
+round ring spacing -350 mm,
+rectangular-round ring spacing (both side) only 2 section spacing -200mm.
+net size -10/10mm.
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Banglar Bonik &copy; ২০২৫ | ডিজাইন করেছেন All Bayjid Bishwash
+  </footer>
+
+</body>
+</html>
