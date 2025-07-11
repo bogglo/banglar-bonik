@@ -24,8 +24,8 @@
     header {
       background-color: #fff;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       padding: 15px 30px;
       border-bottom: 2px solid #d10000;
       position: sticky;
@@ -40,9 +40,9 @@
 
     .nav-links {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 50px; /* এই লাইন নিশ্চিত করে যে তিনটি লিংকের মধ্যে ৫০px ফাঁক থাকবে */
+      justify-content: center;
+      gap: 100px;
     }
 
     .nav-links a {
@@ -88,11 +88,12 @@
       flex-direction: column;
       border-left: 1px solid #ccc;
       padding-left: 20px;
+      align-items: flex-start;
     }
 
     .preview img {
-      max-width: 100%;
       width: 500px;
+      max-width: 100%;
       border-radius: 6px;
       transition: transform 0.3s ease;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -105,13 +106,14 @@
       margin-bottom: 10px;
       color: #d10000;
       line-height: 1.6;
+      text-align: left;
     }
 
     .price {
       font-size: 28px;
       color: green;
       font-weight: bold;
-      text-align: center;
+      text-align: left;
       margin-bottom: 15px;
     }
 
@@ -123,14 +125,22 @@
       font-weight: bold;
       text-decoration: none;
       font-size: 18px;
-      display: inline-block;
-      margin: 0 auto 30px auto;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .order-button:hover {
+      background-color: #a80000;
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .description {
       white-space: pre-line;
       font-size: 15px;
       line-height: 1.7;
+      text-align: left;
     }
 
     footer {
