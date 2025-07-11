@@ -69,63 +69,24 @@
     }
 
     main {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
       padding: 30px;
-    }
-
-    .product-section {
-      width: 300px;
-      background-color: #fff;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .product-section img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      font-size: 15px;
-      line-height: 1.6;
-      white-space: pre-line;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      color: red;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .product-section button {
-      background-color: #d10000;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .product-section button:hover {
-      background-color: #a80000;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     footer {
       background-color: #eee;
-      padding: 20px;
+      padding: 10px 20px;
       font-size: 16px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
     }
   </style>
 </head>
@@ -143,18 +104,7 @@
   </header>
 
   <main>
-    <div class="product-section">
-      <img src="image/p1.jpg" alt="চায়না রিং জাল">
-      <div class="description">
-অরিজিনাল চায়না রিং জাল আর্ডার করুন।
-আমরা অরিজিনাল জাল দিচ্ছি অরিজিনাল দাম নিচ্ছি।
-✅এই জাল দৈর্ঘ্য ৬০ ফিট ।
-✅প্রস্থ ৪০ সেমি বা ১৭ ইঞ্চি 
-✅উচচতা ৩০ সেমি বা ১৩ ইঞ্চি
-      </div>
-      <div class="price">দাম: ৪৩৫০ টাকা</div>
-      <button id="orderNow">অর্ডার করুন</button>
-    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1Kr5OXN-SPtc4X-Pk9m9Y84yBqKd7UK4DLSUohSODBphWrA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </main>
 
   <footer>
@@ -164,17 +114,16 @@
   <script>
     document.getElementById("logoClick").addEventListener("click", function(e) {
       e.preventDefault();
-      window.history.pushState({}, "", "index.html");
+      if (window.location.pathname !== "/index.html") {
+        history.pushState(null, '', 'index.html');
+      }
     });
 
     document.getElementById("homeClick").addEventListener("click", function(e) {
       e.preventDefault();
-      window.history.pushState({}, "", "index.html");
-    });
-
-    document.getElementById("orderNow").addEventListener("click", function(e) {
-      e.preventDefault();
-      window.history.pushState({}, "", "p1oder.html");
+      if (window.location.pathname !== "/index.html") {
+        history.pushState(null, '', 'index.html');
+      }
     });
   </script>
 
